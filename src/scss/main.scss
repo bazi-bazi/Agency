@@ -1,9 +1,11 @@
 @import "mixins";
 @import "variables";
-@import "fonts";
+@import 'fonts';
+@import 'normalize';
 
 
 
-h1 {
+body {
   color: $redcolor;
+  font-family: 'Roboto Condensed Regular', 'arial', sans-serif;
 }
