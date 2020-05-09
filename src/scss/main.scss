@@ -1,7 +1,9 @@
-@import "mixins";
-@import "variables";
+@import 'mixins';
+@import 'variables';
 @import 'fonts';
 @import 'normalize';
+@import 'blocks/header';
+@import 'blocks/socials';
 
 
 // Defoult styles
@@ -25,9 +27,5 @@ body {
 
 .container {
   @include min-max(320px, 100%, 0);
-}
-
-
-.socials__fb {
-  fill:green;
+  background: $primary;
 }
