@@ -42,4 +42,33 @@
   color:$white;
   text-transform: uppercase;
   line-height: 1.077;
+  position: absolute;
+  left:12.9%;
+  top: 56%;
+}
+
+.header__contacts {
+  font-size: 13px;
+  font-family: "Roboto Condensed";
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1.077;
+  position: absolute;
+  left:27%;
+  top: 78%;
+
+}
+
+.header__mail,.header__tel {
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1.077;
+  text-decoration: none;
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 500ms;
+
+  &:hover {
+    color:$activetext;
+  }
 }
