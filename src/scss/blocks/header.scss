@@ -94,17 +94,24 @@
 
   .header__right {
     grid-column: span 1;
+    grid-row: 1 / 2;
   }
 
   .header__left {
     grid-column: span 1;
+    grid-raw: 2 /3;
   }
 
   .header__adress {
     position: static;
+    margin-left: 10%;
+    margin-top: 10%;
   }
 
   .header__contacts {
     position: static;
+    margin-left: 35%;
+    margin-bottom: 20%;
+    margin-top: 20%;
   }
 }
