@@ -12,6 +12,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+
+  @media (min-resolution:2dppx), (min-width: 1500px) {
+    background-image: url('/img/header_background_left.png');
+  }
 }
 
 .header__right {
@@ -70,5 +74,37 @@
 
   &:hover {
     color:$activetext;
+  }
+}
+
+@media (max-width: 980px) {
+  .header__left {
+    grid-column: span 9;
+  }
+  .header__right {
+    grid-column: span 7;
+  }
+}
+
+@media (max-width: 560px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+  }
+
+  .header__right {
+    grid-column: span 1;
+  }
+
+  .header__left {
+    grid-column: span 1;
+  }
+
+  .header__adress {
+    position: static;
+  }
+
+  .header__contacts {
+    position: static;
   }
 }
