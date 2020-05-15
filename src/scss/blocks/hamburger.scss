@@ -1,0 +1,55 @@
+.hamburger {
+  background: none;
+  cursor: pointer;
+  display: block;
+  border-width: 3px;
+  border-color: $hamburgerbordercolor;
+  border-style: solid;
+  transition-property: border-color;
+  transition-duration: 500ms;
+
+  &:hover, &:active {
+    border-color: $activetext;
+
+    .hamburger__element {
+      background-color: $activetext;
+
+      &::after, &::before {
+        background-color: $activetext;
+      }
+    }
+  }
+
+  &:focus {
+    border-color: $activetext;
+  }
+}
+
+
+.hamburger__element {
+  width: 40px;
+  height: 3px;
+  background-color: $hamburgerbordercolor;
+  display: block;
+  margin: 0 auto;
+  transition-property: background-color;
+  transition-duration: 500ms;
+
+  &::after, &::before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: $hamburgerbordercolor;
+    display: block;
+    margin: 0 auto;
+    transition-property: background-color;
+    transition-duration: 500ms;
+  }
+
+  &::after {
+    transform: translateY(4px);
+  }
+  &::before {
+    transform: translateY(-7px);
+  }
+}
