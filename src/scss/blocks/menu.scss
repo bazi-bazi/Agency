@@ -5,6 +5,45 @@
 
 .menu {
   position: absolute;
-  right: 100px;
+  right: 11%;
   top: 50px;
+}
+
+.menu__list {
+  background: $menubackground;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  right: 0px;;
+  top: 0px;;
+  bottom: 0;
+  min-width: 720px;
+  padding-right: 119px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  align-items: center;
+  flex-wrap: wrap;
+  display: none;
+  z-index: -9999;
+}
+.menu__list--active{
+  display: flex;
+  z-index: 1;
+}
+.menu__link {
+  font-size: 14px;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1.786;
+  text-decoration: none;
+  padding: 10px;
+  transition-duration: 500ms;
+  transition-property: color;
+
+  &:hover {
+    color: $textcolor;
+  }
+
 }

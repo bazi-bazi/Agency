@@ -53,3 +53,33 @@
     transform: translateY(-7px);
   }
 }
+
+.hamburger--active {
+  z-index: 1;
+  position: relative;
+  border-color: $activetext;
+
+  &:hover, &:active {
+    border-color: $activetext;
+
+    .hamburger__element {
+      background-color: $activetext;
+
+      &::after, &::before {
+        background-color: $activetext;
+      }
+    }
+  }
+  .hamburger__element {
+    transform: rotate(45deg);
+
+    &::after{
+      transform: rotate(-90deg);
+      position: relative;
+      z-index: 1;
+    }
+    &::before {
+      display: none;
+    }
+  }
+}
